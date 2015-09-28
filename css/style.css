@@ -1,3 +1,12 @@
+
+head{
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	color: #838994;
+	letter-spacing: 0.03em;
+	-webkit-font-smoothing: antialiased;
+}
+
 body {
 	background-color: LightGray;
 }
@@ -11,10 +20,9 @@ div {
 	width: 970px;
 	height: 70px;
 	margin: 0 auto;
+	padding: 0px 15px;
 }
-
-/* Navigation Section */
-.top-navigation > .logo {
-  margin-left: 14px;
-  height: 70px;
+.top-navigation > .links {
+	float: right;
+	display: inline-block;
 }
