@@ -126,6 +126,7 @@ head{
 }	
 
 button {
+	margin-top: 1.5rem;
 	width: 9.688rem;
 	background-color: #f15a29;
 	border-color: #f15a29;
@@ -159,7 +160,7 @@ button {
 
 .cases .content h2 {
 	font-size: 2.75rem;
-	margin: 1.625rem 0 3.125rem;
+	margin: 6rem 0 3.125rem;
 	font-weight: 300;
 	
 }
