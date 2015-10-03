@@ -1,9 +1,36 @@
+/* CSS reset 
+	(all the browsers will see the website in the same by setting every tag to 0 (the website will look the same on all browsers))
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,  figure, figcaption, footer, header, hgroup,  menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+}
+
+/* General styles 
+	(the styles used everywhere in the page (like the Body) or styles which are used in more than 2 of the modules bellow (h2, h3, h4, h5, h6, p, a, ul, li))
+*/
+
 html {
   box-sizing: border-box;
 }
 *, *:before, *:after {
   box-sizing: inherit;
 }
+
+body {
+	background-color: White;
+	font-family:'Roboto', sans-serif;
+	-webkit-font-smoothing:antialiased;
+}
+
+
+/* Header styles 
+	(all the styles inside the < header > or < nav > tags) 
+*/
 
 head{
 	font-family: 'Roboto', sans-serif;
@@ -13,19 +40,18 @@ head{
 	
 }
 
-body {
-	background-color: LightGray;
-	font-family:'Roboto', sans-serif;
-	-webkit-font-smoothing:antialiased;
-}
-
-
-
 /* Navigation Section */
 .top-navigation {
 	background-color: #fff;
+	position:fixed;
+	width: 100%;
+	z-index: 9999;
 }
 
+.top-navigation .logo {
+	margin-top: 0.5rem;
+
+}
 .top-navigation > .content {
 	height: 70px;
 }
@@ -35,7 +61,6 @@ body {
 	margin: 0 auto;
 	padding: 0px 15px;
 }
-
 
 .top-navigation .links {
 	float: right;
@@ -60,6 +85,11 @@ body {
 	cursor: pointer;
 	color: #333333;
 }
+
+
+/* Content styles 
+	(all the styles inside the < sections > or < aside > tags)
+*/
 
 .introduction {
 	background-image: url('../images/first-background.jpg');
@@ -109,3 +139,59 @@ button {
 	
 
 }
+
+/* Footer styles 
+	(all the styles inside the < footer > tag)
+*/
+
+.cases{
+		background-color: #fff;
+		overflow: hidden;
+		padding-bottom: 5rem;
+		
+}
+
+.cases .content{
+	margin -top: 7.875rem;
+	color: #1dle21;
+	text-align: center;
+}
+
+.cases .content h2 {
+	font-size: 2.75rem;
+	margin: 1.625rem 0 3.125rem;
+	font-weight: 300;
+	
+}
+
+
+ul{
+	list-style:none;
+}
+
+.cases .devices > li {
+	width: 33.3333333%;
+	float: left;
+}
+
+.cases .caption > div {
+	border: 1px solid Chocolate;
+}
+
+.cases .devices h3 {
+	font-weight: 400;
+	font-size: 1.563rem;
+	margin: 2.5rem 0px 1.875rem;
+}
+
+
+
+
+
+
+
+
+
+/* Responsive styles 
+	(the very last module in the CSS, contains all the media queries and it is dealing with the compatibility with mobiles and tablets)
+
